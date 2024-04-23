@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Music Player</title>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="fontawesome/css/awesome.css">
+
+  <script src="jsmediatags.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="mList">
+    <span>
+      <p>Songs &nbsp;</p>
+      <p class="total">3</p>
+    </span>
+  </div>
+  <div class="music">
+    
+    <div class="top">
+      <i class="fa fa-chevron-down list"></i>
+      <p class="genre"></p>
+      <i class="fa fa-heart love"></i>
+      <!--<div class="switch">
+       <div class="lever"></div>
+      </div>-->
+    </div>
+  
+    <div class="meta_data">
+      <div class="cover"></div>
+      <p class="title">---</p>
+      <p class="artist">---</p>
+    </div>
+    
+    <div class="msc">
+      <div class="tplayed m">
+        <span class="hr">00</span>
+        :
+        <span class="min">00</span>
+      </div>
+      <div class="fTime">
+        <div class="progress"></div>
+      </div>
+      <div class="tTime m">
+        00:00
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button class="button prev" type="submit">
+        <i class="fa fa-step-backward"></i>
+      </button>
+      <button class="button p 0 x" type="submit">
+        <i class="fas fa-play pl"></i>
+      </button>
+      <button class="button o" type="submit">
+        <i class="fa fa-pause"></i>
+      </button>
+      <button class="button next" type="submit">
+        <i class="fa fa-step-forward"></i>
+      </button>
+    </div>
+    
+  </div>
+  <div class="mini_cont">
+      <div class="mini_img"></div>
+      <p class="mini_name">Gabby Barrett - I Hope (ft. Charlie Puth) (Audio)</p>
+      <svg class="mini_time">
+        <circle cx="15" cy="15" r="15"></circle>
+        <circle cx="15" cy="15" r="15" class="mini_prog"></circle>
+      </svg>
+      <button class="button p 0" type="submit">
+        <i class="fas fa-play pl"></i>
+      </button>
+      <button class="button next" type="submit">
+        <i class="fa fa-step-forward"></i>
+      </button>
+    </div> 
+  
+  <audio controls preload="metadata" id="mp3" src="" type="audio/mpeg"></audio>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
